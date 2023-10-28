@@ -39,6 +39,7 @@ resource "aws_s3_object" "index" {
   source       = "index.html"
   acl          = "public-read"
   content_type = "text/html"
+  depends_on = [ aws_s3_bucket_acl.web ]
 }
 
 resource "aws_s3_object" "error" {
@@ -47,23 +48,27 @@ resource "aws_s3_object" "error" {
   source       = "error.html"
   acl          = "public-read"
   content_type = "text/html"
+  depends_on = [ aws_s3_bucket_acl.web ]
 }
 
-resource "aws_s3_object" "tf" {
+resource "aws_s3_object" "style" {
   bucket       = aws_s3_bucket.web.id
-  key          = "tf.png"
-  source       = "tf.png"
+  key          = "style.css"
+  source       = "style.css"
   acl          = "public-read"
-  content_type = "image/png"
+  content_type = "text/css"
+  depends_on = [ aws_s3_bucket_acl.web ]
 }
 
-resource "aws_s3_object" "AWS" {
+resource "aws_s3_object" "background" {
   bucket       = aws_s3_bucket.web.id
-  key          = "AWS.png"
-  source       = "AWS.png"
+  key          = "img.jpg"
+  source       = "img.jpg"
   acl          = "public-read"
-  content_type = "image/png"
+  content_type = "image/jpg"
+  depends_on = [ aws_s3_bucket_acl.web ]
 }
+
 #---------------------------------------------------------------------
 resource "aws_s3_bucket_website_configuration" "web" {
   bucket = aws_s3_bucket.web.id
