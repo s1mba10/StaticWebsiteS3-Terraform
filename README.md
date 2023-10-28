@@ -2,6 +2,8 @@
 
 This project demonstrates how to use Terraform to deploy a static website to an AWS S3 public bucket. You can easily set up your own static website by following the steps below.
 
+<img width="1440" alt="Screenshot 2023-10-28 at 10 02 44" src="https://github.com/s1mba10/StaticWebsiteS3-Terraform/assets/101098236/0ae8a134-d6c6-4723-ad93-39786c1b55be">
+
 ## Prerequisites
 
 Before you begin, make sure you have the following prerequisites installed:
@@ -35,9 +37,13 @@ You should also have your AWS credentials configured. You can set up your AWS cr
 
    This command will create the necessary AWS resources and deploy your static website.
    
-<img width="1440" alt="Screenshot 2023-10-28 at 10 02 44" src="https://github.com/s1mba10/StaticWebsiteS3-Terraform/assets/101098236/0ae8a134-d6c6-4723-ad93-39786c1b55be">
+<img width="1044" alt="Screenshot 2023-10-28 at 10 41 24" src="https://github.com/s1mba10/StaticWebsiteS3-Terraform/assets/101098236/c354d214-3572-41ae-81c9-01842f614cf5">
 
-4. Once the Terraform apply command completes, you will see the S3 bucket URL where your website is hosted. You can access your website by visiting this URL in a web browser.
+
+5. Once the Terraform apply command completes, you will see the S3 bucket URL where your website is hosted. You can access your website by visiting this URL in a web browser.
+
+<img width="727" alt="Screenshot 2023-10-28 at 10 42 20" src="https://github.com/s1mba10/StaticWebsiteS3-Terraform/assets/101098236/60de5fa7-19e7-40a5-9e3b-794dc7a10949">
+
 
 ## Cleaning Up 🚮
 
