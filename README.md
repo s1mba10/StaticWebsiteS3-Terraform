@@ -34,8 +34,10 @@ You should also have your AWS credentials configured. You can set up your AWS cr
    ```
 
    This command will create the necessary AWS resources and deploy your static website.
+   
+<img width="1440" alt="Screenshot 2023-10-28 at 10 02 44" src="https://github.com/s1mba10/StaticWebsiteS3-Terraform/assets/101098236/0ae8a134-d6c6-4723-ad93-39786c1b55be">
 
-5. Once the Terraform apply command completes, you will see the S3 bucket URL where your website is hosted. You can access your website by visiting this URL in a web browser.
+4. Once the Terraform apply command completes, you will see the S3 bucket URL where your website is hosted. You can access your website by visiting this URL in a web browser.
 
 ## Cleaning Up 🚮
 
