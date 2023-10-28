@@ -37,7 +37,7 @@ You should also have your AWS credentials configured. You can set up your AWS cr
 
 5. Once the Terraform apply command completes, you will see the S3 bucket URL where your website is hosted. You can access your website by visiting this URL in a web browser.
 
-## Cleaning Up
+## Cleaning Up 🚮
 
 If you want to tear down the resources created by Terraform, you can do so with the following command:
 
